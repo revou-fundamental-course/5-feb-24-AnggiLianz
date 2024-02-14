@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaSuh-Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">KaSuh - Kalkulator Suhu</div>
+        </div>
+    </nav>
+    <div class="welcome-container">
+        <div class="welcome-text">
+            <h1>Welcome to KaSuh</h1>
+            <p>Web ini digunakan untuk melakukan pengkonversian pada suhu.</p>
+            <p>Web ini juga dirancang untuk menyelesaikan Mini Project dari RevoU Fundamental Course.</p>
+        </div>
+    </div>
+    <div id="container">
+        <h1>Kalkulator Suhu</h1>
+        <input type="number" id="inputTemp" placeholder="Masukkan suhu...">
+        <select id="selectFrom">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="reamur">Reamur</option>
+        </select>
+        <div class="button-group">
+            <button onclick="convertTemp()" class="tombol">Konversi</button>
+            <button onclick="resetFields()" class="tombol">Reset</button>
+        </div>
+        <div id="result"></div>
+        <div id="warning" style="color: red; text-shadow: 0 0 3px red;"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
